@@ -909,6 +909,10 @@ figcaption {
 
 // PAGE 3
 
+.main-menu ul li:after {
+	background-color: #fff;
+}
+
 .dark-header {
     background-color: rgba(50,50,93,0.85);
     margin-bottom: 0;
@@ -939,7 +943,7 @@ figcaption {
         font-size: 34px;
         font-weight: normal;
 //        line-height: 45px;
-color: #fff;
+		color: #fff;
 }
 p {
     font-family: "WorkSans", Arial, sans-serif;
@@ -1148,7 +1152,7 @@ button {
 		content: "";
 		position: absolute;
 		bottom: -1px;
-		left: -33px;
+		left: -50px;
 		height: 2px;
 		width: 100%;
 		background-color: $accent;
