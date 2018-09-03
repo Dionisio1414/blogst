@@ -1,0 +1,11 @@
+@import "_mixins/font-face";
+
+@include font-face("WorkSans", "../fonts/WorkSans/WorkSans");
+@include font-face("WorkSans Black", "../fonts/WorkSansBlack/WorkSansBlack");
+@include font-face("WorkSans Bold", "../fonts/WorkSansBold/WorkSansBold");
+@include font-face("WorkSans ExtraBold", "../fonts/WorkSansExtraBold/WorkSansExtraBold");
+@include font-face("WorkSans ExtraLight", "../fonts/WorkSansExtraLight/WorkSansExtraLight");
+@include font-face("WorkSans Light", "../fonts/WorkSansLight/WorkSansLight");
+@include font-face("WorkSans Medium", "../fonts/WorkSansMedium/WorkSansMedium");
+@include font-face("WorkSans SemiBold", "../fonts/WorkSansSemiBold/WorkSansSemiBold");
+@include font-face("WorkSans Thin", "../fonts/WorkSansThin/WorkSansThin");
