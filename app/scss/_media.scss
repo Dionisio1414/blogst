@@ -4,7 +4,14 @@
 /*==========  Desktop First  ==========*/
 
 @include media-breakpoint-up(xl) {
-
+	//page 5
+	.block-prev-next .next-article {
+		margin-left: 44%;
+	}
+	
+	.block-prev-next p.next-caption {
+		padding-bottom: 58px;
+	}
 }
 
 // ≥1200px
@@ -178,7 +185,11 @@
 	//page 5
 	
 	.block-prev-next p.next-caption {
-		padding-bottom: 136px;
+		padding-bottom: 98px;
+	}
+	
+	.block-prev-next .next-article {
+		margin-left: 32%;
 	}
 }
 
@@ -661,7 +672,7 @@
     
     .block-prev-next p.next-caption {
         margin: 0 0 0 0;
-		padding-bottom: 103px;
+		padding-bottom: 75px;
     }
     
     .block-prev-next a {
@@ -669,7 +680,7 @@
     }
     
     .block-prev-next .next-article {
-        margin-left: 21%;
+        margin-left: 25%;
     }
     
     .feedback .form-caption {
@@ -883,7 +894,22 @@
 	.top-lists li a {
 		text-decoration: none;
 	}
+	
+	.top-lists li a {
+		padding-left: 40px;
+	}
     
+	.top-lists li:first-child a {
+		padding-left: 0;
+	}
+	
+	.top-lists li:last-child a {
+		padding-left: 71px;
+	}
+	
+	.third-section {
+		margin: 0 1rem;
+	}
     
     // PAGE 5 
     
@@ -1169,12 +1195,21 @@
 	.active-itm a {
 		color: $menu!important;
 	}
+	
+	.main-menu ul li:after {
+		position: static;
+	}
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-    
-    // gamburger 
+	.fixed-header {width: 107%;}
+	
+	header {
+		padding: 0;
+	}
+	
+	// gamburger 
     
     .main-menu-gamburger {
         top: 45px;
@@ -1347,7 +1382,12 @@
     
     // PAGE 3 
     
-    .dark-section {
+	.dark-header {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.dark-section {
         padding: 15px 0 82px 0;
         h2 {
             padding: 2%;
@@ -1626,6 +1666,17 @@
 	.block-prev-next .next-article {
 		margin-left: 22%;
 	}
+	
+	.block-author .user-caption {
+		top: 66%;
+	}
+	
+	.block-author .comment-author {
+		top: 81%;
+		left: 23%;
+	}
+	
+	
 }
 
 @media (max-width: 375px) {
@@ -1637,6 +1688,14 @@
         left: 20%;
         transform: translateX(-10%);
     }
+	
+	.footer-brand {
+		margin-top: 50%;
+	}
+	
+	.block-author .comment-author p span.author-name {
+		margin-left: 20%;
+	}
 }
 
 

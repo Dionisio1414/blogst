@@ -412,7 +412,7 @@ p {
     background-color: $accent;
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: lowercase;
     border: none;
     border-radius: 2px;
     padding: 1px 10px;
@@ -423,6 +423,9 @@ p {
     &:hover {
         background-color: #EE8E49;
     }
+	&::first-letter {
+		text-transform: uppercase;
+	}
 }
 }
 
@@ -499,6 +502,7 @@ p {
         padding: 0 30px 0 30px;
         margin: 0;
         li {
+			font-family: "WorkSans Thin";
             font-size: 15px;
             padding: 1%;
             color: #fff;
@@ -548,7 +552,7 @@ form {
         background-color: $accent;
         font-size: 16px;
         font-weight: 600;
-        text-transform: uppercase;
+        text-transform: lowercase;
         border: none;
         border-radius: 4px;
         padding: 10px 15px;
@@ -559,6 +563,9 @@ form {
         &:hover {
             background-color: #EE8E49;
         }
+		&::first-letter {
+			text-transform: uppercase;
+		}
     }
 }
 }
@@ -571,7 +578,7 @@ form {
     p {
         font-size: 12px;
         text-align: left;
-        text-transform: uppercase;
+//        text-transform: uppercase;
         color: rgba(50, 50, 93, 0.3);
         margin-bottom: 1rem;
     }
@@ -674,7 +681,8 @@ form {
     font-family: "WorkSans Light", Arial, sans-serif;
     font-size: 13px;
     line-height: 15px;
-    text-align: right;
+    text-align: center;
+    text-align: center;
     padding: 23px 0 18px 0;
     color: #fff;
 }
@@ -909,7 +917,7 @@ figcaption {
 
 // PAGE 3
 
-.main-menu ul li:after {
+.dark-header .main-menu ul li:after {
 	background-color: #fff;
 }
 
@@ -932,6 +940,10 @@ figcaption {
     .main-menu-gamburger span {
         background-color: #fff;
     }
+}
+
+.top-mnu ul li:last-child {
+	padding-right: 0;
 }
 
 .dark-section {
@@ -1060,7 +1072,7 @@ button {
         font-family: "WorkSans Thin", Arial, sans-serif;
         font-size: 43px;
         text-align: center;
-        color: #6b7c93;
+        color: #32325D;
     }
     .sub-descripion {
         font-family: "WorkSans Light", Arial, sans-serif;
@@ -1123,7 +1135,7 @@ button {
         display: inline-block;
         padding-right: 7%;
         padding-top: 2%;
-        padding-bottom: 1%;
+        padding-bottom: 1.5%;
 		transition: all .5s ease-in-out;
 		&:first-child {
 			margin-left: 7%;
@@ -1439,7 +1451,7 @@ aside.third-block-lists-mobile {
         font-family: "WorkSans Light", Arial, sans-serif;
         font-size: 34px;
         text-align: center;
-        color: #d0d0e1;
+        color: #fff; //#d0d0e1
         span {
             color: $accent;
         }
@@ -1487,7 +1499,7 @@ aside.third-block-lists-mobile {
         font-size: 43px;
         color: #fff;
     }
-    p {
+    a {
         position: absolute;
         top: 60%;
         left: 50%;
@@ -1513,15 +1525,21 @@ aside.third-block-lists-mobile {
         font-family: "WorkSans Light", Arial, sans-serif;
         font-size: $default-fz;
         color: $menu;
-        span {
+        a.name-links{
+			position: static;
+			display: inline;
+			text-decoration: none;
             font-family: "WorkSans Medium", Arial, sans-serif;
             color: $accent;
+			span {
+				color: #32325d;
+			}
         }
     }
 }
 
 .fix-m {
-    margin-top: 0;
+    margin-top: -30px;
 }
 
 .db-fix {
@@ -1791,9 +1809,17 @@ aside.third-block-lists-mobile {
 
 }
 
+.links-for-article {
+	display: inline!important;
+	text-decoration: none!important;
+	color: #fff!important;
+}
+
+
 .sub-description-posts {
 	float: left;
 	> a {
+		font-family: "WorkSans Thin";
 		display: inline;
 		color: $accent;
 		text-decoration: underline;
