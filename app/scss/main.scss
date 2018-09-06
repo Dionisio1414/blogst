@@ -120,15 +120,15 @@ header {
             font-size: 17px;
             padding-right: 30px;
             white-space: nowrap;
-			&:after {
-				content: "";
-				position: absolute;
-				background-color: #000;
-				height: 15px;
-				width: 1px;
-				top: 7px;
-				right: 15px;
-			}
+//			&:after {
+//				content: "";
+//				position: absolute;
+//				background-color: #000;
+//				height: 15px;
+//				width: 1px;
+//				top: 7px;
+//				right: 15px;
+//			}
             a {
                 color: $menu;
                 &:hover {
@@ -270,17 +270,31 @@ header {
 }
 
 .logo {
-    margin: 3rem 10px 0 0;
+    margin: 3.5rem 10px 0 0;
 }
 
 .logo-text {
+	position: relative;
+	top: 12px;
     display: block;
     font-family: "WorkSans Medium", Arial, sans-serif;
     font-size: 10px;
     align-self: center;
     white-space: nowrap;
     margin-top: 2rem;
+	padding-top: 5px;
+	padding-left: 20px;
     color: #939FB0;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 2px;
+		width: 1px;
+		height: 15px;
+		background-color: #939FB0;
+		margin-left: 5px;
+	}
 }
 
 .header-caption {
@@ -1482,6 +1496,10 @@ aside.third-block-lists-mobile {
 }
 
 // PAGE 5
+
+.fix-hdr-fv {
+	margin-bottom: 3rem;
+}
 
 .top-background {
     position: relative;
