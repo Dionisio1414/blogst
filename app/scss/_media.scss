@@ -12,6 +12,10 @@
 	.block-prev-next p.next-caption {
 		padding-bottom: 58px;
 	}
+	
+	.active-itm:before {
+		left: -52px;
+	}
 }
 
 // ≥1200px
@@ -20,9 +24,17 @@
         font-size: 13px;
     }
     
+	.logo {
+		margin-top: 3rem;
+	}
+	
+	.active-itm:before {
+		left: -29px;
+	}
+	
     .main-menu li {
         font-size: 15px!important;
-        padding-right: 15px!important;
+        padding-right: 7px!important;
         &:last-child {
             padding-right: 0!important;
         }
@@ -163,6 +175,10 @@
     aside.third-block-lists ul li {
         font-size: 15px;
     }
+	
+	.third-section aside.third-block-social p {
+		white-space: normal;
+	}
     
     // PAGE 5
     
@@ -721,6 +737,10 @@
 		background-size: 100% 15%;
 	}
 	
+	.top-lists li:first-child {
+		margin-left: 0;
+	}
+	
     .main-menu {
         background-image: linear-gradient(#32325d, #32325d), linear-gradient(156deg, #32325d, #28285e 46%, #0b0b5b);
         position: fixed;
@@ -1212,6 +1232,7 @@
 // ≥576px
 @include media-breakpoint-down(xs) {
 	.fixed-header {width: 107%;}
+	.logo-adaptive {top: 30px; left: 35px;}
 	
 	header {
 		padding: 0;
@@ -1708,6 +1729,12 @@
 	.block-author .comment-author p span.author-name {
 		margin-left: 20%;
 	}
+}
+
+@media screen and (orientation:landscape) { 
+	.main-menu.menu-state-open {
+		overflow: auto;
+	}	
 }
 
 

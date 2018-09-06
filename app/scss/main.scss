@@ -237,6 +237,7 @@ header {
 }
 
 .sub-adaptive-menu {
+	font-family: "WorkSans Light";
     display: none;
 }
 
@@ -520,6 +521,10 @@ p {
             font-size: 15px;
             padding: 1%;
             color: #fff;
+			a {
+				display: inline;
+				color: #fff;
+			}
         }
     }
 }
@@ -963,7 +968,7 @@ figcaption {
 .dark-section {
     background-color: rgba(50,50,93,0.85);
     max-width: 100%;
-    padding: 82px 0 82px 0;
+    padding: 82px 0 110px 0;
     h2 {
         font-family: "WorkSans Light", Arial, sans-serif;
         font-size: 34px;
@@ -1076,6 +1081,17 @@ button {
         padding: 0;
     }
 }
+
+
+.fix-footer-third-page .copyrigth{
+	text-align: center;
+}
+
+.fix-footer-third-page .footer-second-part {
+	padding-left: 0;
+}
+ 
+ 
 
 // PAGE 4
 
@@ -1227,7 +1243,7 @@ button {
             background-color: #ffa561;
             font-size: 14px;
             font-weight: 600;
-            text-transform: uppercase;
+//            text-transform: lowercase;
             border: none;
             -webkit-border-radius: 2px;
             border-radius: 2px;
@@ -1367,17 +1383,23 @@ aside.third-right-block {
 aside.third-block-social {
     background-color: $menu;
     padding: 25px;
+	padding-right: 15px;
+	padding-left: 15px;
     margin-top: 2rem;
     p {
         background-image: url(../img/icons/reseaux-sociaux%20-%20icono.png);
         background-repeat: no-repeat;
-        background-position: 20px 2px;
+        background-position: 0px 2px;
         font-family: "WorkSans Medium", Arial, sans-serif;
         font-size: 14px;
         text-transform: uppercase;
         text-align: center;
+		padding-left: 27px;
         color: $accent;
     }
+	.icons>i {
+		margin-right: 0;
+	}
 }
 
 .third-section aside.third-block-social p {
@@ -1432,6 +1454,10 @@ aside.third-block-lists {
     
     ul li {
         margin-bottom: 1rem;
+		a {
+			display: inline;
+			color: #fff;
+		}
     }
 }
 
