@@ -709,8 +709,16 @@
 @include media-breakpoint-down(sm) {
 	
 	.header-background {
-		background-position: top center;
-		background-size: 100% 30%;
+		background-position: center 50px;
+		background-size: 140% 50%;
+	}
+	
+	.logo {
+		margin-top: 2.5rem;
+	}
+	
+	.fix-bgi {
+		background-size: 100% 15%;
 	}
 	
     .main-menu {
@@ -1207,6 +1215,10 @@
 	
 	header {
 		padding: 0;
+	}
+	
+	.fix-bgi {
+		background-size: 120% 10%;
 	}
 	
 	// gamburger 
