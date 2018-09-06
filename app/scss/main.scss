@@ -73,10 +73,11 @@ a {
 	overflow-y: hidden;
 } 
 
+
 /* HEADER */
 
 header {
-    padding: 0 60px 0 60px;
+    padding: 0 10px 0 10px;
     margin: 1rem 0;
     max-width: 100%;
 }
@@ -118,7 +119,7 @@ header {
 			position: relative;
             display: inline-block;
             font-size: 17px;
-            padding-right: 30px;
+            padding-right: 16px;
             white-space: nowrap;
 //			&:after {
 //				content: "";
@@ -261,13 +262,19 @@ header {
     background-size: cover;
 }
 
+.home-fix-bg {
+	background-position: center top;
+	background-size: 100%;
+}
+
 .fix-bgi {
     background-position: center top;
     background-size: 100%;
 }
 
 .fix-bgi-second {
-	background-size: 100% 100%;
+	background-position: center top;
+	background-size: 100%;
 }
 
 .logo {
@@ -416,10 +423,15 @@ p {
 }
 
 .category {
+	float: left;
     font-family: "WorkSans SemiBold", Arial, sans-serif;
     font-size: 12px;
     text-transform: uppercase;
     color: #7a7b96;
+	a {
+		text-decoration: none;
+		color: #7a7b96;
+	}
 }
 
 .btn-category {
@@ -519,7 +531,7 @@ p {
         li {
 			font-family: "WorkSans Thin";
             font-size: 15px;
-            padding: 1%;
+            padding: 1rem 0 1rem 0;
             color: #fff;
 			a {
 				display: inline;
@@ -1079,6 +1091,10 @@ button {
         text-transform: uppercase;
         color: #7a7b96;                        
         padding: 0;
+		a {
+			text-decoration: none;
+			color: #7a7b96;
+		}
     }
 }
 
@@ -1103,6 +1119,9 @@ button {
         font-size: 43px;
         text-align: center;
         color: #32325D;
+		b {
+			font-family: "WorkSans SemiBold";
+		}
     }
     .sub-descripion {
         font-family: "WorkSans Light", Arial, sans-serif;
@@ -1227,6 +1246,10 @@ button {
         text-transform: uppercase;
         margin-top: 2%;
         color: #7a7b96;
+		a {
+			text-decoration: none;
+			color: #7a7b96;
+		}
     }
     
     .main-post .description-section {

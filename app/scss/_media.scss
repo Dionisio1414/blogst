@@ -20,6 +20,10 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+	.first-right-block {
+		height: 40%;
+	}
+	
     .top-mnu {
         font-size: 13px;
     }
@@ -59,7 +63,7 @@
     }
     
     .second-right-block {
-        height: 57%;
+        height: 58%;
     }
     
     .wrapper-section {
@@ -304,6 +308,7 @@
     
     .second-right-block {
         margin-left: 0;
+		height: 47%;
     }
     
     .second-right-block ul.main-list li {
@@ -924,7 +929,7 @@
 	}
 	
 	.top-lists li a {
-		padding-left: 40px;
+		padding-left: 0px;
 	}
     
 	.top-lists li:first-child a {
@@ -932,7 +937,7 @@
 	}
 	
 	.top-lists li:last-child a {
-		padding-left: 71px;
+		padding-left: 40px;
 	}
 	
 	.third-section {
@@ -1242,10 +1247,14 @@
 		background-size: 120% 10%;
 	}
 	
+	.logo {
+		margin-top: .5rem;
+	}
+	
 	// gamburger 
     
     .main-menu-gamburger {
-        top: 45px;
+        top: 18px;
         width: 25px;
         height: 25px;
     }
@@ -1688,6 +1697,14 @@
 
 
 @media (max-width: 425px) {
+	.top-lists li:first-child {
+		background-position: right 26px;
+	}
+	.logo-adaptive {
+		top: 0;
+		left: 20px;
+	}
+	
 	.info-blocks {
 		margin-top: 45%;
 	}
@@ -1714,8 +1731,12 @@
 
 @media (max-width: 375px) {
     .main-menu-gamburger {
-        top: 37px;
+        top: 14px;
     }
+	
+	.logo {
+		margin-top: .5rem;
+	}
     
     .top-background div.name-author-top {
         left: 20%;
@@ -1734,6 +1755,12 @@
 @media screen and (orientation:landscape) { 
 	.main-menu.menu-state-open {
 		overflow: auto;
+	}	
+}
+
+@media screen and (orientation:portrait) { 
+	.main-menu.menu-state-open {
+		overflow: inherit;
 	}	
 }
 
