@@ -556,6 +556,10 @@ p {
     padding: 0;
 }
 
+.accent-txt {
+	color: $accent!important;	
+}	
+
 .wrapper-section {
     background-color: #20205d;
     width: 100%;
@@ -567,13 +571,13 @@ p {
         margin-top: 5%;
         margin-bottom: 5%;
         color: #fff;
+		span {
+			color: $accent;
+		}
     }
     .mobile-caption-wr {
       display: none;
       margin-bottom: 2rem;
-      span {
-        color: $accent;
-    }
 }
 
 form {
