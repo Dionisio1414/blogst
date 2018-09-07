@@ -853,8 +853,8 @@ figcaption {
 .block-author {
     position: relative;
     background-color: #f7f9fb;
-    margin-top: 3rem;
-    height: 100%;
+    margin-top: 7rem;
+    height: 85.5%;
     p {
         font-size: 20px;
         line-height: 33px;
@@ -1179,6 +1179,10 @@ button {
             outline: none;
             color: #fff;
             cursor: pointer;
+			transition: all .5s ease-in-out;
+			&:hover {
+                background-color: #EE8E49;
+            }
         }   
     }
     

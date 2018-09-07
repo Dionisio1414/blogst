@@ -242,7 +242,7 @@
     
     .main-menu li {
         font-size: 13px!important;
-        padding-right: 15px!important;
+        padding-right: 5px!important;
     }
     
 	.main-menu ul li:after {
@@ -805,6 +805,13 @@
     .main-menu-gamburger {
         display: block;
     }
+	
+	// fixes
+	
+	.main-menu.menu-state-open {
+		overflow: hidden;
+	}	
+	// fixes
     
     .first-right-block {
         margin-top: 10%;
@@ -1130,6 +1137,10 @@
 	.footer-brand {
 		margin-top: 30%;
 	}
+	
+	.block-author {
+		height: 100%;
+	}
     
     // PAGE 4
     
@@ -1186,7 +1197,7 @@
     }
     
     .third-section .main-post .description-section button {
-        bottom: -25px;
+        bottom: -15px;
         font-size: 12px;
     }
 	
@@ -1237,7 +1248,7 @@
 // ≥576px
 @include media-breakpoint-down(xs) {
 	.fixed-header {width: 107%;}
-	.logo-adaptive {top: 30px; left: 35px;}
+	.logo-adaptive {top: 4px; left: 35px;}
 	
 	header {
 		padding: 0;
@@ -1269,7 +1280,7 @@
     
     .main-menu ul.main-ul {
         width: 90%;
-        margin: 9rem 2rem 0 2rem;
+        margin: 6rem 2rem 0 2rem;
     }
     
     .main-menu .sub-adaptive-menu {
@@ -1404,6 +1415,9 @@
     }
     
     .first-column .btn-category {
+		width: 100%;
+		font-size: 16px;
+		text-transform: uppercase;
         float: left;
     }
     
@@ -1591,6 +1605,9 @@
     }
     
     .third-section .main-post .description-section button {
+		font-size: 16px;
+		text-transform: uppercase;
+		width: 100%;
         left: 0;
         bottom: -55px;
     }
@@ -1726,8 +1743,30 @@
 	}
 	
 	.block-author .comment-author {
-		top: 81%;
-		left: 23%;
+		top: 76%;
+		left: 35%;
+	}
+	
+	.block-author p {
+		font-size: 16px;
+	}
+	
+	.block-author .user-caption {
+		top: 57%;
+	}
+	
+	
+	.block-author .comment-author p span.author-name {
+		font-size: 17px;
+		margin-left: 15%;
+	}
+	
+	.top-background h1 {
+		font-size: 26px;
+	}
+	
+	.top-background a {
+		font-size: 11px;
 	}
 	
 	
@@ -1743,7 +1782,7 @@
 	}
     
     .top-background div.name-author-top {
-        left: 20%;
+        left: 27%;
         transform: translateX(-10%);
     }
 	
@@ -1752,8 +1791,26 @@
 	}
 	
 	.block-author .comment-author p span.author-name {
-		margin-left: 20%;
+		margin-left: 9%;
+		font-size: 15px;
 	}
+	
+	.block-author p {
+		font-size: 12px;
+	}
+	
+	.block-author .user-caption {
+		top: 55%;
+		width: 50px;
+		height: 50px;
+	}
+	
+	.block-author .comment-author {
+		top: 70%;
+		left: 39%;
+	}
+	
+	
 }
 
 @media screen and (orientation:landscape) { 
@@ -1761,13 +1818,6 @@
 		overflow: auto;
 	}	
 }
-
-@media screen and (orientation:portrait) { 
-	.main-menu.menu-state-open {
-		overflow: inherit;
-	}	
-}
-
 
 /*==========  Mobile First  ==========*/
 
