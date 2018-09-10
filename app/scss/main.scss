@@ -458,6 +458,7 @@ p {
     outline: none;
     cursor: pointer;
 	text-align: center;
+	text-decoration: none;
     transition: background-color 0.5s ease-in-out;
     &:hover {
         background-color: #EE8E49;
