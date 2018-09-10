@@ -20,6 +20,14 @@
 	.fix-bgi-second {
 		background-size: 100% 100%;
 	}
+	
+	aside.third-block-social p {
+		background-position: 42px 1px;
+	}
+	
+	.third-section aside.third-block-social p {
+		background-position: 42px 1px;
+	}
 }
 
 // ≥1200px
@@ -570,7 +578,8 @@
     }
     
     .third-section .main-post .description-section button {
-        font-size: 10px;
+        font-size: 14px;
+		bottom: -17px;
     }
     
     .third-section .main-post .description-section {
@@ -741,6 +750,14 @@
             padding: 18px 9px;
         }
     }
+	
+	aside.third-block-social .icons>i {
+		width: 45px;
+		height: 45px;
+		img {
+			width: 30px;
+		}
+	}
     
 }
 
@@ -1274,6 +1291,18 @@
 	.wrapper-section form button {
 		left: 50%;
 		width: 50%;
+	}
+	
+	aside.third-block-social p {
+		background-position: 142px -2px;
+	}
+	
+	.fix-m {
+		margin-top: 0;
+	}
+	
+	.top-background a {
+		top: 70%;
 	}
 }
 
