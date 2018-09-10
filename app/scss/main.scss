@@ -1295,6 +1295,11 @@ button {
         margin-bottom: 2rem;
         color: $some-text;
         button {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
             position: absolute;
             right: 0;
             bottom: 0;
