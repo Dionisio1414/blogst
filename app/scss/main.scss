@@ -474,8 +474,8 @@ p {
 .first-right-block {
     border: 10px solid $accent;
     padding: 20px;
-    width: 100%;
-    height: 45%;
+    width: 400px;
+    height: auto;
     margin-left: 2rem;
     .first-caption {
         background-image: url(../img/icons/rocket.png);
@@ -526,8 +526,8 @@ p {
     padding: 25px;
     margin-top: 1rem;
     margin-left: 2rem;
-    width: 100%;
-    height: 50%;
+    width: 400px;
+    height: auto;
     overflow: hidden;
     .second-caption {
         background-image: url(../img/icons/lightening.png);
@@ -538,7 +538,7 @@ p {
         padding-left: 40px;
         text-transform: uppercase;
         color: $accent;
-		margin-bottom: 0;
+		margin-bottom: .5rem;
     }
     ul.main-list {
         font-family: "WorkSans", Arial, sans-serif;
@@ -1446,6 +1446,10 @@ aside.third-right-block {
             background-color: #EE8E49;
         }
     }
+	
+	img {
+		width: 100%;
+	}
 }
 
 aside.third-block-social {
