@@ -454,15 +454,19 @@ p {
     border: none;
     border-radius: 2px;
     padding: 1px 10px;
-    color: #fff;
+    color: #fff!important;
     outline: none;
     cursor: pointer;
+	text-align: center;
     transition: background-color 0.5s ease-in-out;
     &:hover {
         background-color: #EE8E49;
     }
 	&::first-letter {
 		text-transform: uppercase;
+	}
+	a.btn-category {
+		text-decoration: none!important;
 	}
 }
 }
@@ -534,6 +538,7 @@ p {
         padding-left: 40px;
         text-transform: uppercase;
         color: $accent;
+		margin-bottom: 0;
     }
     ul.main-list {
         font-family: "WorkSans", Arial, sans-serif;
@@ -1308,12 +1313,17 @@ button {
             &:hover {
                 background-color: #EE8E49;
             }
+			a {
+				color: #fff;
+				text-decoration: none;
+			}
         }
     }
     
     .first-column {
         padding: 20px 0 35px 0;
         h4 {
+			font-size: 24px;
             margin: 1rem 0;
         }
         
@@ -1571,6 +1581,9 @@ aside.third-block-lists-mobile {
         &:hover {
             background-color: #EE8E49;
         }
+		a {
+			color: #fff;
+		}
     }
 }
 
@@ -1738,6 +1751,7 @@ aside.third-block-lists-mobile {
 }
 
 .sub-caption-one {
+	font-family: "WorkSans Light", Arial, sans-serif;
     font-size: 20px;
     padding-right: 15%;
     color: $some-text;
@@ -1755,6 +1769,7 @@ aside.third-block-lists-mobile {
 }
 
 .sub-caption-two {
+	font-family: "WorkSans Light", Arial, sans-serif;
     font-size: 20px;
     padding-right: 15%;
     color: $some-text;
@@ -1940,6 +1955,25 @@ aside.third-block-lists-mobile {
 
 
 // PAGE 5 
+// section for titles
 
+
+.titles-for-example {
+	background-color: #FEFFFF;
+	padding: 2rem 0 2rem 0;
+	h1 {
+		font-family: "WorkSans Medium";
+		font-size: 43px;
+		color: #32325d;
+		+ h1 {
+			font-size: 42px;
+		}
+	}
+	h2 {
+		font-family: "WorkSans Medium";
+		font-size: 30px;
+		color: #32325d;
+	}
+}
 
 @import "media";

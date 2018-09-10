@@ -16,10 +16,18 @@
 	.active-itm:before {
 		left: -52px;
 	}
+	
+	.fix-bgi-second {
+		background-size: 100% 100%;
+	}
 }
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+	.fix-bgi-second {
+		background-size: 100%;
+	}
+	
 	.first-right-block {
 		height: 40%;
 	}
@@ -113,6 +121,10 @@
     // PAGE 4
     
     //fix adaptive menu
+	.top-lists li {
+		padding-top: 3%;	
+	}
+	
 	.top-lists li a {
 		font-size: 16px;
 	}
@@ -950,6 +962,10 @@
 	.third-section {
 		margin: 0 1rem;
 	}
+	
+	.first-column .btn-category {
+		font-size: 12px;
+	}
     
     // PAGE 5 
     
@@ -1429,8 +1445,9 @@
     .first-column .btn-category {
 		width: 100%;
 		font-size: 16px;
-		text-transform: uppercase;
+		text-transform: lowercase;
         float: left;
+		text-decoration: none;
     }
     
     
@@ -1617,8 +1634,13 @@
     }
     
     .third-section .main-post .description-section button {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
 		font-size: 16px;
-		text-transform: uppercase;
 		width: 100%;
         left: 0;
         bottom: -55px;
@@ -1630,6 +1652,7 @@
     }
     
     .third-section .first-column h4 {
+		font-size: 25px;
         width: 100%;
     }
     
