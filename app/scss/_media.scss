@@ -850,7 +850,7 @@
     
     .first-right-block {
         margin-top: 10%;
-        height: 55%;
+        height: auto;
     }
     
     .first-right-block figure figcaption button {
@@ -859,7 +859,8 @@
     }
     
     .second-right-block ul.main-list li {
-        padding: 4%;
+        padding: 0;
+		padding-bottom: 20px;
     }
     
     .wrapper-section {
@@ -1431,11 +1432,12 @@
     
     .second-right-block {
         padding: 30px 0 0 30px;
+		margin-bottom: 20%;
     }
     
     .wrapper-section {
         padding: 20px 40px 66px 40px;
-        margin-top: 120px;
+        margin-top: 0px;
         p {
             font-size: 24px;
 			padding-right: 60px;

@@ -539,7 +539,7 @@ p {
         padding-left: 40px;
         text-transform: uppercase;
         color: $accent;
-		margin-bottom: .5rem;
+		margin-bottom: 20px;
     }
     ul.main-list {
         font-family: "WorkSans", Arial, sans-serif;
@@ -548,7 +548,7 @@ p {
         li {
 			font-family: "WorkSans Thin";
             font-size: 15px;
-            padding: 1rem 0 1rem 0;
+            padding: 0 0 20px 0;
             color: #fff;
 			a {
 				display: inline;
@@ -1392,20 +1392,21 @@ aside.third-right-block {
     p.third-caption {
         background-image: url(../img/icons/lightening.png);
         background-repeat: no-repeat;
-        background-position: 0 0;
+        background-position: 7px 0;
         font-family: "WorkSans Medium", Arial, sans-serif;
         font-size: 14px;
         letter-spacing: -0.4px;
         text-transform: uppercase;
         padding-left: 40px;
         color: $accent;
+		margin-bottom: 20px;
     }
     ul.third-main-list {
         padding: 0 30px 0 30px;
         margin: 0;
         li {
            font-family: "WorkSans Thin", Arial, sans-serif;
-           padding: 1rem 0 1rem 0;
+           padding: 0 0 20px 0;
            color: #fff;
            a {
             display: inline;
@@ -1983,6 +1984,22 @@ aside.third-block-lists-mobile {
 		font-family: "WorkSans Medium";
 		font-size: 30px;
 		color: #32325d;
+	}
+	
+	.description-for-h1 {
+		font-family: "WorkSans Light";
+		font-size: 14px;
+		color: $menu;
+		.title-style {
+			font-family: "WorkSans";
+			font-size: 16px;
+			display: inline-block;
+			text-decoration: underline;
+		}
+		.description-style {
+			font-family: "WorkSans Medium";
+			display: block;
+		}
 	}
 }
 
