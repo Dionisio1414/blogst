@@ -13,10 +13,6 @@
 		padding-bottom: 58px;
 	}
 	
-	.active-itm:before {
-		left: -52px;
-	}
-	
 	.fix-bgi-second {
 		background-size: 100% 100%;
 	}
@@ -51,10 +47,6 @@
     
 	.logo {
 		margin-top: 3rem;
-	}
-	
-	.active-itm:before {
-		left: -29px;
 	}
 	
     .main-menu li {
@@ -135,6 +127,10 @@
     // PAGE 4
     
     //fix adaptive menu
+	.top-lists {
+		width: 72%;	
+	}
+	
 	.top-lists li {
 		padding-top: 3%;	
 	}
@@ -562,7 +558,7 @@
     }
     
     .top-lists li a {
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .third-section .main-post h2 {
@@ -615,10 +611,6 @@
         height: 35px;
         margin-right: 5px;
     }
-	
-	.top-lists {
-		margin: 3rem 0;
-	}
     
     
     // PAGE 5
@@ -980,7 +972,7 @@
 	}
 	
 	.top-lists li:last-child a {
-		padding-left: 40px;
+		padding-left: 17px;
 	}
 	
 	.third-section {
@@ -1226,7 +1218,7 @@
     .top-lists li:first-child {
 		background-image: url(../img/icons/downwards-pointer.png);
 		background-repeat: no-repeat;
-		background-position: right 30px;
+		background-position: right 26px;
 		background-size: 15px 15px;
         padding-right: 80px;
 		padding-left: 80px;
@@ -1552,12 +1544,12 @@
     
     // PAGE 4
 	
-	.third-section {
-		margin: 0;
+	.top-lists {
+		width: 85%;
 	}
 	
-	.top-lists {
-		margin: 3rem 0;
+	.third-section {
+		margin: 0;
 	}
     
     .third-section .first-column .category {
@@ -1883,6 +1875,14 @@
 	.block-author .comment-author {
 		top: 70%;
 		left: 39%;
+	}
+	
+	.top-lists li a {
+		font-size: 16px;
+	}
+	
+	.top-lists li:first-child {
+		background-position: right 17px;
 	}
 	
 	
